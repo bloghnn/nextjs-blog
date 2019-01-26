@@ -9,7 +9,7 @@ const defaultOGImage = '/static/next-bg.png'
 
 const Head = props => (
   <NextHead>
-    <title>{props.title + ' - ' + defaultTitle || defaultTitle}</title>
+    <title>{props.title ? props.title + ' - ' + defaultTitle : defaultTitle}</title>
     <meta
       name="description"
       content={props.description || defaultDescription}

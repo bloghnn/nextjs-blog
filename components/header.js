@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import InputBase from '@material-ui/core/InputBase'
+// import Typography from '@material-ui/core/Typography'
+// import InputBase from '@material-ui/core/InputBase'
 import { fade } from '@material-ui/core/styles/colorManipulator'
 import { withStyles } from '@material-ui/core/styles'
-import SearchIcon from '@material-ui/icons/Search'
+// import SearchIcon from '@material-ui/icons/Search'
 
 const styles = theme => ({
   root: {
@@ -75,15 +75,15 @@ function SearchAppBar (props) {
   const { classes } = props
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="#fff" className="appBar">
+      <AppBar position="static" color="#fff" className="appBar" style={{ alignItems: 'center' }}>
         <Toolbar>
-          <a href="/">
-            <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-            Blog using Next.js
-            </Typography>
-          </a>
+          <div>
+            <a href="/">
+              <img src="/static/logo.png" alt="Nextjs Blog" style={{ maxHeight: 55 }} />
+            </a>
+          </div>
           <div className={classes.grow} />
-          <div className={classes.search}>
+          {/* <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -94,7 +94,7 @@ function SearchAppBar (props) {
                 input: classes.inputInput
               }}
             />
-          </div>
+          </div> */}
         </Toolbar>
       </AppBar>
     </div>
