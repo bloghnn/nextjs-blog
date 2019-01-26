@@ -1,21 +1,23 @@
-# Next.js example
 
-## How to use
+# Blog dengan Next.js
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+Blog sederhana yang dibuat dengan menggunakan Next.js
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
+## Quick Start
+``` bash
+$ yarn
+$ yarn dev
 ```
+Kemudian akses http://localhost:3000 di browser.
 
-Install it and run:
+## Demo
 
-```sh
-npm install
-npm run dev
-```
+Bisa akses **https://blog-nextjs.herokuapp.com/**
 
-## The idea behind the example
+## Screenshot
 
-[Next.js](https://github.com/zeit/next.js) is a framework for server-rendered React apps.
+![Image](https://i.imgur.com/6729U9o.jpg)
+
+----
+
+Copyright © 2019 by Muhammad Al Anis Faishal
