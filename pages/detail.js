@@ -10,6 +10,7 @@ import {
 import Frame from 'components/frame'
 import BlogData from 'components/blogData'
 import Container from 'components/container'
+import Head from 'components/head'
 
 const styles = theme => ({
   root: {
@@ -95,6 +96,11 @@ class Detail extends React.Component {
 
     return (
       <Frame>
+        <Head
+          title={detail.title}
+          description={detail.description}
+          ogImage={detail.image}
+        />
         <div className={classes.root}>
           <Container>
             <div className="box">
