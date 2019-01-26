@@ -11,6 +11,7 @@ import Frame from 'components/frame'
 import BlogList from 'components/blogList'
 import BlogData from 'components/blogData'
 import Container from 'components/container'
+import Head from 'components/head'
 
 const styles = theme => ({
   root: {
@@ -95,29 +96,32 @@ class Index extends React.Component {
     const headline = BlogData && BlogData.filter(data => data.headline === true)[0]
 
     return (
-      <Frame>
-        <div className={classes.root}>
-          <Container>
-            <div className="headline">
-              <a href={`detail/${headline.slug}`}>
-                <img src={headline.image} alt={headline.title} />
-                <div className="overlay" />
-                <Typography className="title" variant="h2" gutterBottom>
-                  {htmr(headline.title)}
-                </Typography>
-              </a>
-            </div>
-            <div className="box">
-              {BlogData && BlogData.map((data, i) =>
-                <BlogList
-                  key={i}
-                  data={data}
-                />
-              )}
-            </div>
-          </Container>
-        </div>
-      </Frame>
+      <div>
+        <Head />
+        <Frame>
+          <div className={classes.root}>
+            <Container>
+              <div className="headline">
+                <a href={`detail/${headline.slug}`}>
+                  <img src={headline.image} alt={headline.title} />
+                  <div className="overlay" />
+                  <Typography className="title" variant="h2" gutterBottom>
+                    {htmr(headline.title)}
+                  </Typography>
+                </a>
+              </div>
+              <div className="box">
+                {BlogData && BlogData.map((data, i) =>
+                  <BlogList
+                    key={i}
+                    data={data}
+                  />
+                )}
+              </div>
+            </Container>
+          </div>
+        </Frame>
+      </div>
     )
   }
 }

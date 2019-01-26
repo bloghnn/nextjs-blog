@@ -95,35 +95,37 @@ class Detail extends React.Component {
     const detail = BlogData && BlogData.filter(data => data.slug === query.slug)[0]
 
     return (
-      <Frame>
+      <div>
         <Head
           title={detail.title}
           description={detail.description}
           ogImage={detail.image}
         />
-        <div className={classes.root}>
-          <Container>
-            <div className="box">
-              <Typography className="title" variant="h1" gutterBottom>
-                {detail.title}
-              </Typography>
-              <div className="image">
-                <img src={detail.image} alt={detail.title} />
-              </div>
-              <div className="content">
-                <div className="contentBox">
-                  {htmr(detail.content)}
-                  <Typography className="from" variant="body2" gutterBottom>
+        <Frame>
+          <div className={classes.root}>
+            <Container>
+              <div className="box">
+                <Typography className="title" variant="h1" gutterBottom>
+                  {detail.title}
+                </Typography>
+                <div className="image">
+                  <img src={detail.image} alt={detail.title} />
+                </div>
+                <div className="content">
+                  <div className="contentBox">
+                    {htmr(detail.content)}
+                    <Typography className="from" variant="body2" gutterBottom>
                     Source from: <a href={detail.from.link} target="_blank" rel="noopener noreferrer">
-                      {detail.from.name}
-                    </a>
-                  </Typography>
+                        {detail.from.name}
+                      </a>
+                    </Typography>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Container>
-        </div>
-      </Frame>
+            </Container>
+          </div>
+        </Frame>
+      </div>
     )
   }
 }
