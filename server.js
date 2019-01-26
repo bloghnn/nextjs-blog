@@ -19,10 +19,13 @@ app.prepare()
       return handle(req, res)
     })
 
-    server.listen(3000, (err) => {
+    const portInProd = process.env.PORT || 3003
+    const PORT = dev ? 3000 : portInProd
+
+    server.listen(PORT, (err) => {
       if (err) throw err
       // eslint-disable-next-line
-      console.log('> Ready on http://localhost:3000')
+      console.log(`> Ready on http://localhost:${PORT}`)
     })
   })
   .catch((ex) => {
