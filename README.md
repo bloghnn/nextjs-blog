@@ -16,7 +16,7 @@ Bisa akses **https://blog-nextjs.herokuapp.com/**
 
 ## Screenshot
 
-![Image](https://i.imgur.com/6729U9o.jpg)
+![Image](https://cdn.pbrd.co/images/HYgjEo3.png)
 
 ----
 
