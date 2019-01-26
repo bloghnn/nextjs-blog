@@ -43,6 +43,9 @@ const styles = theme => ({
     '& a': {
       color: theme.palette.primary.main
     }
+  },
+  [theme.breakpoints.only('sm')]: {
+
   }
 })
 
@@ -52,14 +55,14 @@ class BlogList extends Component {
     return (
       <div className={classes.root} style={style}>
         <Grid container spacing={24}>
-          <Grid item md={5}>
+          <Grid item sm={5}>
             <a href={`/detail/${data.slug}`}>
               <div className="image">
                 <img src={data.image} alt={`${data.title} image`} />
               </div>
             </a>
           </Grid>
-          <Grid item md={7}>
+          <Grid item sm={7}>
             <a href={`/detail/${data.slug}`}>
               <Typography className="title" variant="h2" gutterBottom>
                 {htmr(data.title)}

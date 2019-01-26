@@ -58,6 +58,27 @@ const styles = theme => ({
       '& a': {
         color: theme.palette.primary.main
       }
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      '& .title': {
+        fontSize: 36
+      },
+      '& .image': {
+        margin: '40px -25px'
+      },
+      '& .box': {
+        padding: '50px 25px 10px'
+      }
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      '& .title': {
+        fontSize: 30
+      },
+      '& .box': {
+        margin: '-25px -15px 0'
+      }
     }
   }
 })

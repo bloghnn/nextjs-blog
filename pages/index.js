@@ -39,6 +39,7 @@ const styles = theme => ({
         position: 'absolute',
         bottom: 10,
         left: 30,
+        right: 30,
         fontSize: 36,
         fontWeight: 700,
         marginBottom: 15,
@@ -57,6 +58,32 @@ const styles = theme => ({
       backgroundColor: '#fff',
       boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.16)',
       padding: '20px 50px'
+    },
+
+    [theme.breakpoints.down('sm')]: {
+      '& .headline': {
+        '& .title': {
+          bottom: 10,
+          left: '20px !important',
+          fontSize: '30px !important'
+        }
+      },
+      '& .box': {
+        padding: '0px 20px'
+      }
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      '& .headline': {
+        margin: '0 -15px',
+
+        '& .title': {
+          fontSize: '22px !important'
+        }
+      },
+      '& .box': {
+        margin: '0 -15px'
+      }
     }
   }
 })
@@ -72,11 +99,13 @@ class Index extends React.Component {
         <div className={classes.root}>
           <Container>
             <div className="headline">
-              <img src={headline.image} alt={headline.title} />
-              <div className="overlay" />
-              <Typography className="title" variant="h2" gutterBottom>
-                {htmr(headline.title)}
-              </Typography>
+              <a href={`detail/${headline.slug}`}>
+                <img src={headline.image} alt={headline.title} />
+                <div className="overlay" />
+                <Typography className="title" variant="h2" gutterBottom>
+                  {htmr(headline.title)}
+                </Typography>
+              </a>
             </div>
             <div className="box">
               {BlogData && BlogData.map((data, i) =>
