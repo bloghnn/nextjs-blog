@@ -21,7 +21,7 @@
     "build": "next build",
     "start": "yarn build && cross-env NODE_ENV=production node server.js",
     "export": "next build && next export",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "yarn build"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
