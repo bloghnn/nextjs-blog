@@ -1,7 +1,11 @@
 
 # Blog dengan Next.js
 
-Blog sederhana yang dibuat dengan menggunakan Next.js
+[![Depedencies Status](https://david-dm.org/maafaishal/nextjs-blog.svg)](https://david-dm.org/maafaishal/nextjs-blog)
+
+***
+
+Blog sederhana yang dibuat dengan menggunakan Next.js. Lengkap dengan layout menggunakan [Material UI](https://material-ui.com/ "Material UI"), responsive pada Smartphone, Tablet, dan Desktop, dan SEO (Search Engine Optimization)
 
 ## Quick Start
 ``` bash
@@ -12,11 +16,11 @@ Kemudian akses http://localhost:3000 di browser.
 
 ## Demo
 
-Bisa akses **https://blog-nextjs.herokuapp.com/**
+Bisa mengakses **https://blog-nextjs.herokuapp.com/**
 
 ## Screenshot
 
-![Image](https://i.imgur.com/6729U9o.jpg)
+![Image](https://cdn.pbrd.co/images/HYgkway.png)
 
 ----
 
