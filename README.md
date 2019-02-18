@@ -1,6 +1,10 @@
 
 # Blog dengan Next.js
 
+[![Depedencies Status](https://david-dm.org/maafaishal/nextjs-blog.svg)](https://david-dm.org/maafaishal/nextjs-blog)
+
+***
+
 Blog sederhana yang dibuat dengan menggunakan Next.js. Lengkap dengan layout menggunakan [Material UI](https://material-ui.com/ "Material UI"), responsive pada Smartphone, Tablet, dan Desktop, dan SEO (Search Engine Optimization)
 
 ## Quick Start
