@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core'
 
 import Frame from 'components/frame'
-import BlogData from 'components/blogData'
+import BlogData from 'components/blogData.json'
 import Container from 'components/container'
 import Head from 'components/head'
 

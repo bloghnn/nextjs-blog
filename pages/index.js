@@ -9,7 +9,7 @@ import {
 
 import Frame from 'components/frame'
 import BlogList from 'components/blogList'
-import BlogData from 'components/blogData'
+import BlogData from 'components/blogData.json'
 import Container from 'components/container'
 import Head from 'components/head'
 
