@@ -21,7 +21,7 @@ Bisa mengakses **<https://blog-nextjs.herokuapp.com/>**
 
 ## Screenshot
 
-![Image](https://i.ibb.co/wz3y76d/Screen-Shot-2019-02-23-at-12-20-23.png)
+![Image](https://i.ibb.co/8Dp5Gbw/Screen-Shot-2019-02-23-at-12-20-23.png)
 
 ***
 
