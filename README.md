@@ -1,6 +1,7 @@
 
 # Blog dengan Next.js
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f51f5625c4b6440dae3682d103fc7a45)](https://app.codacy.com/app/maafaishal/nextjs-blog?utm_source=github.com&utm_medium=referral&utm_content=maafaishal/nextjs-blog&utm_campaign=Badge_Grade_Dashboard)
 [![Depedencies Status](https://david-dm.org/maafaishal/nextjs-blog.svg)](https://david-dm.org/maafaishal/nextjs-blog)
 
 ***
