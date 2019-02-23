@@ -1,7 +1,7 @@
-
 # Blog dengan Next.js
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f51f5625c4b6440dae3682d103fc7a45)](https://app.codacy.com/app/maafaishal/nextjs-blog?utm_source=github.com&utm_medium=referral&utm_content=maafaishal/nextjs-blog&utm_campaign=Badge_Grade_Dashboard)
+[![Code Climate](https://codeclimate.com/github/maafaishal/nextjs-blog/badges/gpa.svg)](https://codeclimate.com/github/maafaishal/nextjs-blog)
 [![Depedencies Status](https://david-dm.org/maafaishal/nextjs-blog.svg)](https://david-dm.org/maafaishal/nextjs-blog)
 
 ***
@@ -10,19 +10,19 @@ Blog sederhana yang dibuat dengan menggunakan Next.js. Lengkap dengan layout men
 
 ## Quick Start
 ``` bash
-$ yarn
-$ yarn dev
+yarn
+yarn dev
 ```
-Kemudian akses http://localhost:3000 di browser.
+Kemudian akses <http://localhost:3000> di browser.
 
 ## Demo
 
-Bisa mengakses **https://blog-nextjs.herokuapp.com/**
+Bisa mengakses **<https://blog-nextjs.herokuapp.com/>**
 
 ## Screenshot
 
 ![Image](https://cdn.pbrd.co/images/HYgkway.png)
 
-----
+***
 
 Copyright © 2019 by Muhammad Al Anis Faishal
