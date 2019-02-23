@@ -6,7 +6,6 @@ import flush from 'styled-jsx/server'
 class MyDocument extends Document {
   render () {
     const { pageContext } = this.props
-
     return (
       <html lang="en" dir="ltr">
         <Head>
@@ -67,29 +66,24 @@ MyDocument.getInitialProps = ctx => {
       pageContext = props.pageContext
       return <Component {...props} />
     }
-
     WrappedComponent.propTypes = {
       pageContext: PropTypes.object.isRequired
     }
-
     return WrappedComponent
   })
 
-  let css
-  // It might be undefined, e.g. after an error.
+  let css // It might be undefined, e.g. after an error.
   if (pageContext) {
     css = pageContext.sheetsRegistry.toString()
   }
 
   return {
     ...page,
-    pageContext,
-    // Styles fragment is rendered after the app and page rendering finish.
+    pageContext, // Styles fragment is rendered after the app and page rendering finish.
     styles: (
       <React.Fragment>
         <style
-          id="jss-server-side"
-          // eslint-disable-next-line react/no-danger
+          id="jss-server-side" // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: css }}
         />
         {flush() || null}

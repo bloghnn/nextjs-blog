@@ -83,18 +83,6 @@ function SearchAppBar (props) {
             </a>
           </div>
           <div className={classes.grow} />
-          {/* <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput
-              }}
-            />
-          </div> */}
         </Toolbar>
       </AppBar>
     </div>

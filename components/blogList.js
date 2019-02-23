@@ -64,17 +64,13 @@ class BlogList extends Component {
           </Grid>
           <Grid item sm={7}>
             <a href={`/detail/${data.slug}`}>
-              <Typography className="title" variant="h2" gutterBottom>
-                {htmr(data.title)}
-              </Typography>
+              <Typography className="title" variant="h2" gutterBottom> {htmr(data.title)} </Typography>
             </a>
             <Typography className="description" variant="body2" gutterBottom>
               {htmr(data.description)}
             </Typography>
             <Typography className="source" variant="body2" gutterBottom>
-              Source from: <a href={data.from.link} target="_blank" rel="noopener noreferrer">
-                {data.from.name}
-              </a>
+              Source from: <a href={data.from.link} target="_blank" rel="noopener noreferrer"> {data.from.name} </a>
             </Typography>
           </Grid>
         </Grid>

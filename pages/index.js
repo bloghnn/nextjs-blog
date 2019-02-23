@@ -93,7 +93,6 @@ class Index extends React.Component {
   render () {
     const { classes } = this.props
     const headline = BlogData && BlogData.filter(data => data.headline === true)[0]
-
     return (
       <div>
         <Head />
@@ -104,17 +103,12 @@ class Index extends React.Component {
                 <a href={`detail/${headline.slug}`}>
                   <img src={headline.image} alt={headline.title} />
                   <div className="overlay" />
-                  <Typography className="title" variant="h2" gutterBottom>
-                    {htmr(headline.title)}
-                  </Typography>
+                  <Typography className="title" variant="h2" gutterBottom> {htmr(headline.title)} </Typography>
                 </a>
               </div>
               <div className="box">
                 {BlogData && BlogData.map((data, i) =>
-                  <BlogList
-                    key={i}
-                    data={data}
-                  />
+                  <BlogList key={i} data={data} />
                 )}
               </div>
             </Container>
