@@ -71,7 +71,7 @@ class BlogList extends Component {
             <Typography className="description" variant="body2" gutterBottom>
               {htmr(data.description)}
             </Typography>
-            <Typography className="from" variant="body2" gutterBottom>
+            <Typography className="source" variant="body2" gutterBottom>
               Source from: <a href={data.from.link} target="_blank" rel="noopener noreferrer">
                 {data.from.name}
               </a>

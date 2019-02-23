@@ -92,7 +92,6 @@ const styles = theme => ({
 class Index extends React.Component {
   render () {
     const { classes } = this.props
-
     const headline = BlogData && BlogData.filter(data => data.headline === true)[0]
 
     return (

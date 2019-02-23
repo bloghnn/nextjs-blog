@@ -91,7 +91,6 @@ class Detail extends React.Component {
 
   render () {
     const { classes, query } = this.props
-
     const detail = BlogData && BlogData.filter(data => data.slug === query.slug)[0]
 
     return (
